@@ -1,4 +1,4 @@
-console.log("this is slient side server");
+
 
 
     const weather = document.querySelector('form');

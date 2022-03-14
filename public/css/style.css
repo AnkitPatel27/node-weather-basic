@@ -1,0 +1,38 @@
+body{
+    color: #333333;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 650px;
+    margin: 10px auto;
+    /* text-align: center; */
+}
+
+footer{
+    padding: 16px 10px;
+    /* background-color: lavender; */
+    border-top: 1px solid #333333;
+    position: absolute;
+    width: 40%;
+    bottom: 0;
+}
+header{
+    
+    padding: 16px 10px;
+    /* background-color: lavender; */
+}
+header div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+input{
+    padding: 8px;
+}
+h1{
+    font-size: 64px;
+}
+
+header a{
+    text-decoration: none;
+    color: #333333;
+    font-weight: lighter;
+}

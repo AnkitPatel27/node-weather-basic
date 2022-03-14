@@ -6,6 +6,7 @@ const express = require('express');
 const hbs = require('hbs');
 
 const  app = express();
+const port = process.env.PORT || 3000;
 
 //PATH
 const pathtopublic = path.join(__dirname,'../public');
@@ -71,6 +72,6 @@ app.get('*',(req,res)=> {
     res.send('Sorry no such page was found');
 })
 
-app.listen(8000,() => {
-    console.log('server  is ip on part 8000.');
+app.listen(port,() => {
+    console.log('server  is ip on part' + port + ' .');
 })

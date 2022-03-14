@@ -1,6 +1,3 @@
-
-
-
     const weather = document.querySelector('form');
     const loter = document.querySelector('input');
     const message_1 = document.querySelector('.message-1');
@@ -9,7 +6,7 @@
         e.preventDefault();
         message_1.innerText = "loading...";
         message_2.innerText = "";
-        fetch("http://localhost:8000/weather?location="+loter.value)
+        fetch("/weather?location="+loter.value)
         .then((response) => {
             response.json().then((data) => {
                 if(data.error)

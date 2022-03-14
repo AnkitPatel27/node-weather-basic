@@ -23,20 +23,20 @@ app.use(express.static(pathtopublic));
 app.get('',(req,res) => {
     res.render('index',{
         name: 'Ankit',
-        title:'INDEX'
+        title:'Weather'
     });
 })
 app.get('/help',(req,res) => {
     res.render('help',{
         name: 'Ankit',
-        title:'HELP'
+        title:'Help'
     });
 })
 
 app.get('/about',(req,res) => {
     res.render('about',{
         name: 'Ankit',
-        title:'ABOUT'
+        title:'About'
     });
 })
 

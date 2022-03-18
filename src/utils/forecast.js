@@ -3,7 +3,7 @@ const request = require('request');
 const forecast= (address,callback) => {
     const url = 'http://api.weatherstack.com/current?access_key=d8ce402cd32fc8836c73c8e82dd953a2&query='+encodeURIComponent(address)+'&units=m';
     
-    request({url , json : true},(error,{body}) =>{
+    request({url , json : true},(error,{body} = {}) =>{
         if(error)
         {
             callback('Unable to connect to the sever',undefined);
@@ -17,7 +17,9 @@ const forecast= (address,callback) => {
             callback(undefined,{
                 address,
                 temperature: current.temperature,
-                feelslike:current.feelslike});
+                humidity:current.humidity,
+                time : current.time    
+            });
         }
     });
 
